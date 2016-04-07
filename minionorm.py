@@ -63,12 +63,12 @@ def operations():
 
 def auth():
     global main,cli
-#    u=url.get()
-#    s=secure.get()
-#    a=access.get()
-    u="172.16.23.1:9000"
-    a="9P8O9WVH4PIB3XTAALX2"
-    s="6cODbsYQbLgO1REd4DaNFecPf2kRYTggMRtCLsu2"
+    u=url.get()
+    s=secure.get()
+    a=access.get()
+    #u="172.16.23.1:9000"
+    #a="9P8O9WVH4PIB3XTAALX2"
+    #s="6cODbsYQbLgO1REd4DaNFecPf2kRYTggMRtCLsu2"
     try:
         cli=Minio(u,access_key=a,secret_key=s,insecure="true")
         tkMessageBox.showinfo(title="Minio Server",message="connected successfully")
